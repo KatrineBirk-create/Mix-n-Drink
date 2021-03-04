@@ -1,0 +1,395 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* End of Eric Meyer's CSS Reset */
+
+/*styling for mobile and tablets */
+
+html,
+body {
+    background-color: black;
+    color: #ebece8;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    background-color: #ebece6;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+    z-index: 100;
+
+}
+
+/* video styling start */
+
+
+
+#myVideo {
+    width: 100%;
+}
+
+
+/* Icon styling start */
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 40%;
+    margin-top: 9%;
+    width: 20%;
+}
+
+
+.icon_text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+    margin: 5%;
+    font-size: 120%;
+    color: white;
+}
+
+.icon_header {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Icon Styling Ends */
+
+/* GIF styling Start */
+
+.grid-container1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.myVideo1 {
+    width: 35%;
+    margin-top: 10%;
+    z-index: -3;
+    margin-left: 5%;
+}
+
+.myVideo2 {
+    width: 150%;
+    margin-left: -230%;
+    z-index: -3;
+}
+
+.myVideo3 {
+    width: 300%;
+    margin-top: 99%;
+    z-index: -3;
+    margin-left: -230%;
+}
+
+/* GIF Styling Ends */
+
+/* Parallex starts*/
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+    position: relative;
+    opacity: 0.75;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.bgimg-1 {
+    background-image: url("/video/test.gif");
+    min-height: 600px;
+    width: 100%;
+
+}
+
+
+.bgimg-2 {
+    background-image: url("/img/drinkbox.JPG");
+    width: 100%;
+    min-height: 400px;
+}
+
+/* parallex Ends*/
+
+.overskrift {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* Styling of GT buttom starts */
+ .GT{
+        width: 30%;
+     margin-top: -17%;
+    }
+    
+    .GT2{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 1%;
+    }
+ .hidden{
+        display: none;    /* hides the piture before then buttom function is activated */ 
+        
+    }
+
+/* Styling of GT buttom Ends*/
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background-color: #4e4b4a;
+    font-size: 100%;
+    bottom: 0%;
+    margin-bottom: 0;
+}
+
+
+h6 {
+    display: none;
+}
+
+.social {
+    width: 10%;
+}
+
+.footer_text {
+    color: white;
+}
+
+/*Styling for mobile and tablets Ends*/
+
+/*Styling for website starts*/
+
+@media screen and (min-width:850px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 0px 0px;
+        grid-template-areas:
+            "icon1 icon2 icon3 icon4";
+    }
+
+    .icon1 {
+        grid-area: icon1;
+    }
+
+    .icon2 {
+        grid-area: icon2;
+    }
+
+    .icon3 {
+        grid-area: icon3;
+    }
+
+    .icon4 {
+        grid-area: icon4;
+    }
+
+    .social {
+        width: 5%;
+    }
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        position: relative;
+        opacity: 0.75;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .bgimg-1 {
+        background-image: url("/video/test.gif");
+        min-height: 600px;
+        width: 100%;
+
+    }
+
+
+    .bgimg-2 {
+        background-image: url("/img/drinkbox.JPG");
+        width: 100%;
+        min-height: 400px;
+    }
+
+
+    .caption {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: white;
+    }
+
+    .caption span.border {
+        background-color: black;
+        color: #fff;
+        padding: 18px;
+        font-size: 25px;
+        letter-spacing: 10px;
+    }
+    
+    .hidden{
+        display: none;     
+        
+    }
+
+    .GT{
+        width: 15%;
+    }
+    
+    .GT2{
+        width: 30%;
+        margin-top: -20%;
+        margin-left: 3%;
+    }
+}
+/*styling for website Ends*/

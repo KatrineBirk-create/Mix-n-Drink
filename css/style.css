@@ -220,7 +220,6 @@ header {
 
 /* GIF Styling Ends */
 
-/* Parallex starts*/
 
 .bgimg-1,
 .bgimg-2,
@@ -247,7 +246,25 @@ header {
     min-height: 400px;
 }
 
-/* parallex Ends*/
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+
+.caption span.border { 
+    background-color: black;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
 
 .overskrift {
     letter-spacing: 5px;
@@ -256,8 +273,6 @@ header {
     color: white;
     text-align: center;
 }
-
-/* Styling of GT buttom starts */
  .GT{
         width: 30%;
      margin-top: -17%;
@@ -269,11 +284,9 @@ header {
         margin-top: 1%;
     }
  .hidden{
-        display: none;    /* hides the piture before then buttom function is activated */ 
+        display: none;   
         
     }
-
-/* Styling of GT buttom Ends*/
 
 .footer {
     text-align: center;
@@ -300,7 +313,7 @@ h6 {
 
 /*Styling for mobile and tablets Ends*/
 
-/*Styling for website starts*/
+/* Styling for website starts*/
 
 @media screen and (min-width:850px) {
 
@@ -332,13 +345,13 @@ h6 {
     .social {
         width: 5%;
     }
-
+/*Parallex starts*/
     .bgimg-1,
     .bgimg-2,
     .bgimg-3 {
         position: relative;
         opacity: 0.75;
-        background-attachment: fixed;
+        background-attachment: fixed; /* this is what creates the parallex*/
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -376,7 +389,6 @@ h6 {
         font-size: 25px;
         letter-spacing: 10px;
     }
-    
     .hidden{
         display: none;     
         
@@ -391,5 +403,6 @@ h6 {
         margin-top: -20%;
         margin-left: 3%;
     }
+    
+    /*Parallex ends*/
 }
-/*styling for website Ends*/

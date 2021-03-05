@@ -24,7 +24,7 @@ weekdays[6] = "Vi leverer i dag fra 17-02";
 
     document.getElementById("demo").innerHTML = weekdays[today.getDay()];
 
-/* Click on element to new piture */ 
+/* Click on element to see new piture */ 
 function toggleElementVisibility(idOfElement) {
 
     let elementToToggle = document.getElementById(idOfElement);
